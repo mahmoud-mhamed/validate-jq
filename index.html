@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validae</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="validate.css">
+</head>
+<body >
+<form action="">
+    <input type="text" data-validate="gt:33" data-patternType="gt" required>
+    <input type="text" required id="two">
+    <br>
+    <button type="submits">submit</button>
+</form>
+
+</body>
+<script src="validate.js"></script>
+<script>
+    validateByAttr();
+    /*$('#one').keyup(function () {
+        validate($('#one'),'gt:22');
+    });
+    $('#two').keyup(function () {
+        validate($('#two'),'lt:22');
+    });*/
+</script>
+</html>
